@@ -13,3 +13,12 @@ The next points were implemented to achieve a score of at least 90/100:
 7. The html file is minified.
 
 The score achieved in PageSpeed is 96/100 for mobile and 97/100 for desktop.
+
+
+## Optimizations in main.js
+
+The changes needed to get 60 fps are:
+
+1. The `updatePosition` function is simpler and avoids forced synchronous layout.
+2. The `updateScroll` function is implemented to control requestAnimationFrame.
+3. The number of pizzas (before 200) is determined with the screen height to avoid creating unnecessary pizzas.
