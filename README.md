@@ -1,5 +1,16 @@
 # WebsiteOptimization
 
+## Installation
+The first part of the project is to achieve a `PageSpeed` score of at least 90\100. To get the score of `PageSpeed` you need: 
+
+
+1. Open `index.html` in localhost, for example ` python -m SimpleHTTPServer 8000`
+2. To expose your localhost to internet you can use `ngrok`, for example `.\ngrok http 8000`
+3. Use the link provided by `ngrok` to get the `PageSpeed` score of `index.html`.
+
+For the second part of the project, which involves `pizza.html` and `main.js`, you can open `pizza.html` in your localhost.
+
+
 ## Optimizations in index.html
 
 The next points were implemented to achieve a score of at least 90/100:
@@ -27,4 +38,25 @@ The changes needed to resize pizzas under 5 ms are:
 
 1. The function `changePizzaSizes` absorbed the work of the `determineDx` function.
 2. `document.querySelectorAll` is computed just one time.
-3. To avoid forced synchronous layout, the size of the pizzas is changed by percentage. 
+3. To avoid forced synchronous layout, the size of the pizzas is changed by percentage.
+
+## License
+Copyright (c) 2017 Odin Eufracio
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
