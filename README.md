@@ -22,3 +22,9 @@ The changes needed to get 60 fps are:
 1. The `updatePosition` function is simpler and avoids forced synchronous layout.
 2. The `updateScroll` function is implemented to control requestAnimationFrame.
 3. The number of pizzas (before 200) is determined with the screen height to avoid creating unnecessary pizzas.
+
+The changes needed to resize pizzas under 5 ms are:
+
+1. The function `changePizzaSizes` absorbed the work of the `determineDx` function.
+2. `document.querySelectorAll` is computed just one time.
+3. To avoid forced synchronous layout, the size of the pizzas is changed by percentage. 
